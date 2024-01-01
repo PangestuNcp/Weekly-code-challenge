@@ -7,7 +7,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://order-summary-card.web.app/">
+    <a href="https://pangestuncp.github.io/Weekly-code-challenge/01.Newsletter_card_component/">
       Demo
     </a>
     <span> | </span>
