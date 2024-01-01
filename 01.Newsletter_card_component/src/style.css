@@ -63,7 +63,7 @@ body {
 #form.invalid .label__input:before {
   content: "";
   position: absolute;
-  background: url(/icon/invalid.png);
+  background: url(../icon/invalid.png);
   right: 10px;
   bottom: 2px;
   width: 1em;
@@ -74,7 +74,7 @@ body {
 #form.valid .label__input:before {
   content: "";
   position: absolute;
-  background: url(/icon/valid.png);
+  background: url(../icon/valid.png);
   right: 10px;
   bottom: 2px;
   width: 1em;
