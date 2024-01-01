@@ -5,6 +5,6 @@
 Hopefully with this I can increase my experience and insight in creating landing pages.</p>
 <hr>
 
-- [Week 1 | Newsletter card component](#)
+- [Week 1 | Newsletter card component](https://github.com/PangestuNcp/Weekly-code-challenge/tree/main/01.Newsletter_card_component)
 <!-- - [Week 2](#)
 - [week 10](#) -->

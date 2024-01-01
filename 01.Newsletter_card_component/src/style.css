@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================================================== */
+/* Card */
+.section__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e6e9fb;
+}
+.section__card .item {
+  text-align: center;
+  background-color: #fff;
+  max-width: 90%;
+  padding: 2.2em 1.2em;
+  border-radius: 16px;
+  box-shadow: 10px 10px 0 #ffffff5b;
+}
+.section__card .item .heading {
+  font-size: 1rem;
+  max-width: 80%;
+  margin: auto;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+.section__card .item .description {
+  font-weight: 400;
+  color: #374151;
+  margin: 0.67em auto 1.33em;
+  max-width: 100%;
+  font-size: 1rem;
+}
+
+/* ================================================== */
+/* Form */
+.section__card .item form .input__email label {
+  position: relative;
+}
+.section__card .item form .input__email input {
+  font-family: "Poppins", sans-serif;
+  background-color: #fafaff;
+  border: 1px solid #b3b8d8;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 0.9rem;
+}
+.section__card .item form .input__email input:focus {
+  border-color: #00194b;
+}
+
+/* Invalid & valid */
+#form.invalid .label__input:before {
+  content: "";
+  position: absolute;
+  background: url(/icon/invalid.png);
+  right: 10px;
+  bottom: 2px;
+  width: 1em;
+  height: 1em;
+  z-index: 1000;
+  background-size: cover;
+}
+#form.valid .label__input:before {
+  content: "";
+  position: absolute;
+  background: url(/icon/valid.png);
+  right: 10px;
+  bottom: 2px;
+  width: 1em;
+  height: 1em;
+  z-index: 1000;
+  background-size: cover;
+}
+#form.valid .form_input {
+  border: 1px solid #4caf50;
+}
+#form.invalid .form_input {
+  border: 1px solid #f44336;
+}
+
+/* Button */
+.section__card .item form .input__email button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #111827;
+  border: 1px solid #111827;
+  border-radius: 8px;
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 0.9rem;
+  margin: 0.6em 0 0;
+}
+.section__card .item form .input__email button:hover {
+  background-color: #00194b;
+  border-color: #00194b;
+}
+
+/* checking */
+.section__card .item form .checking {
+  display: flex;
+  max-width: 570px;
+  margin: 1em auto 0;
+}
+.section__card .item form .checking input {
+  height: 20px;
+}
+.section__card .item form .checking p {
+  font-size: 10px;
+  text-align: start;
+  margin-left: 1em;
+}
+
+/* ================================================== */
+/* Responsive */
+@media only screen and (min-width: 550px) {
+  .section__card .item {
+    padding: 2.2em;
+  }
+}
+@media screen and (min-width: 750px) {
+  .section__card .item {
+    padding: 3.1em;
+  }
+  .section__card .item form .input__email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__card .item form .input__email input,
+  .section__card .item form .input__email button {
+    padding: 9px 20px;
+    width: 410px;
+  }
+  .section__card .item form .input__email button {
+    margin-left: 0.8em;
+    margin-top: 0;
+    width: 145px;
+  }
+
+  #form.invalid .label__input:before {
+    bottom: 12px;
+  }
+  #form.valid .label__input:before {
+    bottom: 12px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .section__card .item {
+    padding: 4.1em;
+    max-width: 850px;
+  }
+  .section__card .item .heading {
+    font-size: 1.2rem;
+  }
+  .section__card .item .description {
+    font-size: 1.13rem;
+    max-width: 90%;
+  }
+  .section__card .item form .input__email input,
+  .section__card .item form .input__email button {
+    font-size: 1rem;
+  }
+  .section__card .item form .checking p {
+    font-size: 11px;
+  }
+
+  #form.invalid .label__input:before {
+    bottom: 14px;
+  }
+  #form.valid .label__input:before {
+    bottom: 13px;
+  }
+}
